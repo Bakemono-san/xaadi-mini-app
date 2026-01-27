@@ -1,6 +1,6 @@
 <scroll-view class="page">
 
-<view class="container justify-between flex flex-col">
+<view class="container justify-between gap-6 flex flex-col">
   <view class="flex flex-col items-center">
     <image src="/images/logo.png" class="logo"/>
     <text class="text-5xl">Xaadi</text>

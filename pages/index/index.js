@@ -6,7 +6,7 @@ Page({
       {
         name: "Jouer seul",
         icon: "icon",
-        url: "",
+        url: "/pages/play/index",
         bg: "bg-turquoise",
         color: "text-black"
       },

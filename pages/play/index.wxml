@@ -1,3 +1,21 @@
-<scroll-view class="page flex flex-col items-center justify-center">
-<text>Choisir la Difficulté</text>
-</scroll-view>
+<view class="page items-center justify-center px-6">
+  <view class="w-full flex flex-col gap-6 items-center">
+      <text class="text-lg font-bold">Choisir la Difficulté</text>
+
+      <view wx:for="{{levels}}" wx:key="index" class="w-full p-6 {{item.bg}} {{item.color}} rounded-md shadow-lg gap-4 flex flex-col">
+        <view class="flex items-center justify-between">
+          <text class="font-bold uppercase">{{item.name}}</text>
+          <image src="{{item.icon}}" class="icon" />
+        </view>
+        <view class="flex items-center justify-center text-mini">
+          <text>{{item.description}}</text>
+        </view>
+      </view>
+
+      <view class="flex gap-4 items-center justify-center bg-white w-full p-4 rounded-md" bind:tap="goBack">
+        <image src="/images/fleche-vers-larriere.png" class="icon" />
+        <text>Retour</text>
+      </view>
+  </view>
+
+</view>

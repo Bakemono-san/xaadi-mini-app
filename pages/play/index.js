@@ -5,62 +5,16 @@ Page({
    * Page initial data
    */
   data: {
-
+    levels: [
+      {name:"facile",icon:" ",description:"Parfait pour debuter",bg:"bg-green",color:"text-white"},
+      {name:"moyen",icon:" ",description:"Un bon challenge",bg:"bg-turquoise",color:"text-black"},
+      {name:"expert",icon:" ",description:"Pour les Champions",bg:"bg-blue",color:"text-white"},
+    ]
   },
 
-  /**
-   * Lifecycle function--Called when page load
-   */
-  onLoad(options) {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady() {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow() {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page hide
-   */
-  onHide() {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page unload
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * Page event handler function--Called when user drop down
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * Called when page reach bottom
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * Called when user click on the top right corner to share
-   */
-  onShareAppMessage() {
-
+  goBack(){
+    wx.navigateTo({
+      url: '/pages/index/index',
+    })
   }
 })

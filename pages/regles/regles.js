@@ -30,4 +30,14 @@ Page({
       ]}, 
     }
   },
+
+  goBack(){
+    wx.navigateBack({delta: 1})
+  },
+
+  start(){
+    wx.navigateTo({
+      url: '/pages/play/index',
+    })
+  }
 })

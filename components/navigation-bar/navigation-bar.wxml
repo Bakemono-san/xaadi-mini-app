@@ -1,6 +1,6 @@
 <view class="weui-navigation-bar {{extClass}}">
   <view
-    class="bg-brown p-4 flex flex-col gap-4 {{ios ? 'ios' : 'android'}}"
+    class="bg-brown px-4 py-6 flex flex-col gap-4 {{ios ? 'ios' : 'android'}}"
     style="color: {{color}}; {{safeAreaTop}};"
   >
     <view style="{{leftWidth}};">

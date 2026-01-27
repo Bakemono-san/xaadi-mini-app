@@ -1,21 +1,21 @@
 
 
-.tab{
+.tab {
   flex: 1;
   text-align: center;
-  padding: .45rem;
-  border-radius: .75rem;
+  padding: 20rpx;
+  border-radius: 24rpx;
   font-weight: 500;
-  cursor: pointer;
 }
 
-.stat-item{
+.stat-item {
   background-color: white;
-  padding: 1rem;
-  border-radius: .75rem;
+  width: calc(50% - 23rpx);
+  padding: 16rpx 0px;
+  border-radius: 24rpx;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: .5rem;
+  gap: 16rpx;
 }

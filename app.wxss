@@ -17,11 +17,16 @@ body{
   box-sizing: border-box;
 } 
 
+view{
+  box-sizing: border-box;
+}
+
 .page{
   height: 100vh;
   background: #F8F4E8;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 
 .text-sm{
@@ -58,6 +63,10 @@ font-size: 1.875rem;
 
 .flex{
   display: flex;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .flex-1{
@@ -98,7 +107,7 @@ font-size: 1.875rem;
 }
 
 .gap-6{
-  gap: 1.5rem;
+  gap: 48rpx;
 }
 
 .logo{
@@ -195,11 +204,11 @@ font-size: 1.875rem;
 }
 
 .pt-6{
-  padding-top: 1.5rem;
+  padding-top: 48rpx;
 }
 
 .py-6{
-  padding: 1.5rem 0rem;
+  padding: 48rpx 0rem;
 }
 
 .py-8{
@@ -207,7 +216,7 @@ font-size: 1.875rem;
 }
 
 .px-6{
-  padding: 0rem 1.5rem;
+  padding: 0rem 48rpx;
 }
 
 .m-none{
@@ -215,7 +224,7 @@ font-size: 1.875rem;
 }
 
 .p-6{
-  padding: 1.5rem;
+  padding: 48rpx;
 }
 
 .overflow-hidden{
@@ -249,7 +258,7 @@ font-size: 1.875rem;
 
 .grid{
   display: grid;
-  gap: 1rem;
+  gap: 32rpx;
 }
 
 .grid-cols-2{

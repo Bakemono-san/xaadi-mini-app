@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "menu-btn": "/components/menu-button/menu-button"
+  }
 }

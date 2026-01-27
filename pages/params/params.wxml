@@ -1,77 +1,79 @@
 <view class="page">
   <nav-bar title="Parametres" showBack />
+  <scroll-view scroll-y style="height: 100vh;">
+    <view class="page flex flex-col gap-4 p-6">
 
-  <view class="flex flex-col gap-4 p-6 overflow-y-scroll">
-    <view class="row-container rounded-md flex flex-col gap-4">
-      <view>
-        <image src="" class="icon" />
-        <text class="font-bold">Audio</text>
-      </view>
-      <view class="text-xs flex items-center justify-between">
-        <view class="flex flex-col gap-2">
-          <text class="font-bold">Effets sonores</text>
-          <text class="text-xs">Sons de jeu et interactions</text>
-        </view>
-
-        <toggle checked="{{params.Audio['effets-sonore']}}" bind:change="onParamToggle" data-section="Audio" data-key="effets-sonore" />
-      </view>
-
-      <view class="text-xs flex items-center justify-between">
-        <view class="flex flex-col gap-2">
-          <text class="font-bold">Musique d'Ambiance</text>
-          <text class="text-xs">Musique de fond (balafon)</text>
-
-        </view>
-        <toggle checked="{{params.Audio['Ambiance']}}" bind:change="onParamToggle" data-section="Audio" data-key="Music-d'Ambiance" />
-      </view>
-    </view>
-
-    <view class="row-container rounded-md flex flex-col gap-4">
-      <view>
-        <image src="" class="icon" />
-        <text class="font-bold">Retour Haptique</text>
-      </view>
-      <view class="text-xs flex items-center justify-between">
-        <view class="flex flex-col gap-2">
-          <text class="font-bold">Vibrations</text>
-          <text class="text-xs">Vibrations lors des interactions</text>
-        </view>
-
-        <toggle checked="{{params.Retour['vibration']}}" bind:change="onParamToggle" data-section="Retour Haptique" data-key="vibration" />
-      </view>
-    </view>
-
-    <view class="row-container rounded-md flex flex-col gap-4">
-      <view>
-        <image src="" class="icon" />
-        <text class="font-bold">Vitesse D'animation</text>
-      </view>
-      <view class="flex flex-col gap-4">
-        <view wx:for="{{vitesse}}" wx:key="index" bind:tap="onParamToggle" data-section="vitesse" data-key="vitesse" data-text="{{item}}">
-          <menu-btn title="{{item}}" fontSize="text-xs" background="{{params.vitesse['vitesse'] == item ? 'bg-turquoise' : ''}}"></menu-btn>
-        </view>
-      </view>
-    </view>
-
-    <view class="row-container rounded-md flex flex-col gap-4">
-      <view>
-        <image src="" class="icon" />
-        <text class="font-bold">A Propos</text>
-      </view>
-      <view class="text-sm flex flex-col gap-2">
+      <view class="row-container rounded-md flex flex-col gap-4">
         <view>
-          <text class="font-bold">Version: </text><text>{{params.about.version}}</text>
+          <image src="" class="icon" />
+          <text class="font-bold">Audio</text>
         </view>
-        <view>
-          <text class="font-bold">Développer pour: </text><text>{{params.about.for}}</text>
-        </view>
-        <view>
-          <text class="font-bold">Objectif: </text><text>{{params.about.objectif}}</text>
-        </view> 
-      </view>
-      <text class="text-xs">{{params.about.description}}</text>
-    </view>
+        <view class="text-xs flex items-center justify-between">
+          <view class="flex flex-col gap-2">
+            <text class="font-bold">Effets sonores</text>
+            <text class="text-xs">Sons de jeu et interactions</text>
+          </view>
 
-    <menu-btn title="Réinitialiser  les Paramétres" background="bg-red" fontSize="text-xs" bind:tap="resetParams" colorClass="text-white"/>  
-  </view>
+          <toggle checked="{{params.Audio['effets-sonore']}}" bind:change="onParamToggle" data-section="Audio" data-key="effets-sonore" />
+        </view>
+
+        <view class="text-xs flex items-center justify-between">
+          <view class="flex flex-col gap-2">
+            <text class="font-bold">Musique d'Ambiance</text>
+            <text class="text-xs">Musique de fond (balafon)</text>
+
+          </view>
+          <toggle checked="{{params.Audio['Ambiance']}}" bind:change="onParamToggle" data-section="Audio" data-key="Music-d'Ambiance" />
+        </view>
+      </view>
+
+      <view class="row-container rounded-md flex flex-col gap-4">
+        <view>
+          <image src="" class="icon" />
+          <text class="font-bold">Retour Haptique</text>
+        </view>
+        <view class="text-xs flex items-center justify-between">
+          <view class="flex flex-col gap-2">
+            <text class="font-bold">Vibrations</text>
+            <text class="text-xs">Vibrations lors des interactions</text>
+          </view>
+
+          <toggle checked="{{params.Retour['vibration']}}" bind:change="onParamToggle" data-section="Retour Haptique" data-key="vibration" />
+        </view>
+      </view>
+
+      <view class="row-container rounded-md flex flex-col gap-4">
+        <view>
+          <image src="" class="icon" />
+          <text class="font-bold">Vitesse D'animation</text>
+        </view>
+        <view class="flex flex-col gap-4">
+          <view wx:for="{{vitesse}}" wx:key="index" bind:tap="onParamToggle" data-section="vitesse" data-key="vitesse" data-text="{{item}}">
+            <menu-btn title="{{item}}" fontSize="text-xs" background="{{params.vitesse['vitesse'] == item ? 'bg-turquoise' : ''}}"></menu-btn>
+          </view>
+        </view>
+      </view>
+
+      <view class="row-container rounded-md flex flex-col gap-4">
+        <view>
+          <image src="" class="icon" />
+          <text class="font-bold">A Propos</text>
+        </view>
+        <view class="text-sm flex flex-col gap-2">
+          <view class="flex">
+            <text class="font-bold">Version: </text><text>{{params.about.version}}</text>
+          </view>
+          <view class="flex">
+            <text class="font-bold">Développer pour: </text><text>{{params.about.for}}</text>
+          </view>
+          <view class="flex">
+            <text class="font-bold">Objectif: </text><text>{{params.about.objectif}}</text>
+          </view>
+        </view>
+        <text class="text-xs">{{params.about.description}}</text>
+      </view>
+
+      <menu-btn title="Réinitialiser  les Paramétres" background="bg-red" fontSize="text-xs" bind:tap="resetParams" colorClass="text-white" />
+    </view>
+  </scroll-view>
 </view>
