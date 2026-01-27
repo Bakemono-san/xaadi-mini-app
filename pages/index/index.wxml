@@ -7,10 +7,6 @@
     <text class="text-mini">jeu traditionnel Africain</text>
   </view>
   <view class="flex w-full flex-col gap-4">
-    <!-- <button wx:for="{{menus}}" wx:key="index" class="text-lg">
-      <img src="" alt=""/>
-      <text>{{item.name}}</text>
-    </button> -->
     <view wx:for="{{menus}}" wx:key="index">
     <menu-button  background="{{item.bg}}" colorClass="{{item.color}}" url="{{item.url}}" icon="/images/logo.png" title="{{item.name}}" />
     </view>

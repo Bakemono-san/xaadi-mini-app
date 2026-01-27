@@ -1,0 +1,5 @@
+<view class="toggle" bindtap="onToggle">
+  <view class="toggle-track {{checked ? 'on' : ''}}">
+    <view class="toggle-thumb {{checked ? 'on' : ''}}"></view>
+  </view>
+</view>

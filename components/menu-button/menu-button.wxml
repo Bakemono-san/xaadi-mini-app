@@ -1,4 +1,4 @@
-<button class="menu-btn flex items-center justify-center gap-2 flex-1 border-none {{colorClass}} {{background}}" bind:tap="navigate">
+<button class="menu-btn flex items-center justify-center gap-2 flex-1 border-none {{fontSize}} {{colorClass}} {{background}}" bind:tap="navigate">
   <image src="{{icon}}" class="icon" />
   <text>{{title}}</text>
 </button>

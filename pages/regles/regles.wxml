@@ -10,7 +10,7 @@
       </text>
 
       <view wx:for="{{item.details}}" wx:key="*this" class="text-sm text-black">
-        • {{item}}
+        {{item.list_type != "" && item.list_type != "index" ? item.list_type : item.list_type == "" ? "" : index }} {{item}}
       </view>
 
     </view>

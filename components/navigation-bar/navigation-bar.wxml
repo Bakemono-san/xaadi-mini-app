@@ -10,6 +10,6 @@
       </button>
     </view>
 
-    <text class="text-3xl text-white">{{title}}</text>
+    <text class="text-3xl text-white text-pacifico  " >{{title}}</text>
   </view>
 </view>
