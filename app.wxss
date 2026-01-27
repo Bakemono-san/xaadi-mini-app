@@ -135,7 +135,7 @@ font-size: 1.875rem;
 }
 
 .rounded-md{
-  border-radius: 10px;
+  border-radius: .75rem;
 }
 
 .text-pacifico {
@@ -148,6 +148,10 @@ font-size: 1.875rem;
 
 .bg-white{
   background-color: white;
+}
+
+.bg-gray-200{
+  background-color: rgb(212, 212, 212);
 }
 
 .bg-red{
@@ -191,7 +195,19 @@ font-size: 1.875rem;
 }
 
 .pt-6{
-  padding-top: 1.5  rem;
+  padding-top: 1.5rem;
+}
+
+.py-6{
+  padding: 1.5rem 0rem;
+}
+
+.py-8{
+  padding: 2rem 0rem;
+}
+
+.px-6{
+  padding: 0rem 1.5rem;
 }
 
 .m-none{
@@ -229,4 +245,17 @@ font-size: 1.875rem;
   box-shadow:
     0 10rpx 15rpx -3rpx rgba(0, 0, 0, 0.1),
     0 4rpx 6rpx -4rpx rgba(0, 0, 0, 0.1);
+}
+
+.grid{
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-rows-2{
+  grid-template-rows: repeat(2, auto);
 }

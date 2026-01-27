@@ -1,0 +1,3 @@
+<scroll-view class="page flex flex-col items-center justify-center">
+<text>Choisir la Difficulté</text>
+</scroll-view>

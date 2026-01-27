@@ -41,7 +41,7 @@ Page({
       {
         name: "Scores",
         icon: "icon",
-        url: "",
+        url: "/pages/scores/scores",
         bg: "bg-yellowish",
         color: "text-black"
       },
