@@ -1,1 +1,6 @@
 /* pages/params/params.wxss */
+
+.row-container{
+  background-color: white;
+  padding: 1rem;
+}

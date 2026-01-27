@@ -1,4 +1,9 @@
-/**app.wxss**/
+@font-face {
+  font-family: 'Pacifico';
+  src: url('/fonts/Pacifico-Regular.ttf');
+}
+
+
 body{
   background: #F8F4E8;
 }
@@ -133,12 +138,20 @@ font-size: 1.875rem;
   border-radius: 10px;
 }
 
+.text-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
 .font-bold{
   font-weight: bold;
 }
 
 .bg-white{
   background-color: white;
+}
+
+.bg-red{
+  background-color: #ef4444;
 }
 
 .bg-blue{
