@@ -1,0 +1,24 @@
+<!-- pages/regles/regles.wxml -->
+<view class="page">
+  <nav-bar title="Règles" showBack />
+
+  <view class="p-6 flex flex-col gap-4 overflow-y-scroll">
+
+    <view wx:for="{{rules}}" wx:key="index" class="bg-white flex flex-col justify-start gap-2 rounded-md shadow-lg p-6">
+      <text class="text-lg p-none font-bold">
+        {{index}}
+      </text>
+
+      <view wx:for="{{item.details}}" wx:key="*this" class="text-sm text-black">
+        • {{item}}
+      </view>
+
+    </view>
+
+    <view class="flex flex-col gap-4 pt-6">
+      <menu-btn background="bg-turquoise" title="commencer a jouer"></menu-btn>
+      <menu-btn title="retour a l'acceuil"></menu-btn>
+    </view>
+
+  </view>
+</view>

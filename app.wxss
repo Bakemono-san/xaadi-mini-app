@@ -1,0 +1,219 @@
+/**app.wxss**/
+body{
+  background: #F8F4E8;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem 4rem 2rem;
+  box-sizing: border-box;
+} 
+
+.page{
+  height: 100vh;
+  background: #F8F4E8;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-sm{
+  font-size: .875rem;
+}
+
+.text-xs{
+  font-size: .75rem;
+}
+
+.text-mini{
+  font-size: .6rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+}
+
+.text-3xl{
+font-size: 1.875rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+}
+
+.text-white{
+  color: white;
+}
+
+.text-black{
+  color: black;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-1{
+  flex: 1;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.justify-start{
+  justify-content: start;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.items-start{
+  align-items: flex-start;
+}
+
+.icon{
+  width: 16px;
+  height: 16px;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-2{
+  gap: .5rem;
+}
+
+.menu-btn{
+  border-radius: 10px;
+  padding: 1rem ;
+  cursor: pointer;
+  min-width: 100%;
+  text-transform: uppercase;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.border-none{
+  border: none;
+}
+
+.rounded{
+  border-radius: 5px;
+}
+
+.rounded-md{
+  border-radius: 10px;
+}
+
+.font-bold{
+  font-weight: bold;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.bg-blue{
+  background-color: #3a5a8c;
+}
+
+.bg-transparent{
+  background-color: transparent;
+}
+
+.bg-neutral-turquoise{
+  background-color: #ffffffb3 ;
+}
+
+.bg-brown{
+  background-color: #6B4226;
+}
+
+.bg-turquoise{
+  background-color: #e1b07e;
+}
+
+.bg-green{
+  background-color: #5d8a66 ;
+}
+
+.bg-yellowish{
+  background-color: #d4af37;
+}
+
+.p-none{
+  padding: 0;
+}
+
+.pt-4{
+  padding-top: 1rem;
+}
+
+.pt-6{
+  padding-top: 1.5  rem;
+}
+
+.m-none{
+  margin: 0;
+}
+
+.p-6{
+  padding: 1.5rem;
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.overflow-y-scroll{
+  overflow-y: scroll;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+}
+
+.back-btn{
+  display: flex;
+  background-color: transparent;
+  max-width: min-content;
+  padding: 0;
+}
+
+.shadow-lg {
+  box-shadow:
+    0 10rpx 15rpx -3rpx rgba(0, 0, 0, 0.1),
+    0 4rpx 6rpx -4rpx rgba(0, 0, 0, 0.1);
+}
