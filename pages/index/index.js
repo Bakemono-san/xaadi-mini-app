@@ -6,7 +6,7 @@ Page({
       {
         name: "Jouer seul",
         icon: "icon",
-        url: "",
+        url: "/pages/play/index",
         bg: "bg-turquoise",
         color: "text-black"
       },
@@ -41,7 +41,7 @@ Page({
       {
         name: "Scores",
         icon: "icon",
-        url: "",
+        url: "/pages/scores/scores",
         bg: "bg-yellowish",
         color: "text-black"
       },

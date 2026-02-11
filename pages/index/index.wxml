@@ -1,16 +1,12 @@
 <scroll-view class="page">
 
-<view class="container justify-between flex flex-col">
+<view class="container justify-between gap-6 flex flex-col">
   <view class="flex flex-col items-center">
     <image src="/images/logo.png" class="logo"/>
     <text class="text-5xl">Xaadi</text>
     <text class="text-mini">jeu traditionnel Africain</text>
   </view>
   <view class="flex w-full flex-col gap-4">
-    <!-- <button wx:for="{{menus}}" wx:key="index" class="text-lg">
-      <img src="" alt=""/>
-      <text>{{item.name}}</text>
-    </button> -->
     <view wx:for="{{menus}}" wx:key="index">
     <menu-button  background="{{item.bg}}" colorClass="{{item.color}}" url="{{item.url}}" icon="/images/logo.png" title="{{item.name}}" />
     </view>

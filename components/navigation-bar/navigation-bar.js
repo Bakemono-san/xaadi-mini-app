@@ -68,7 +68,7 @@ Component({
         ios: !isAndroid,
         innerPaddingRight: `padding-right: ${windowWidth - rect.left}px`,
         leftWidth: `width: ${windowWidth - rect.left}px`,
-        safeAreaTop: isDevtools || isAndroid ? `height: calc(var(--height) + ${top}px); padding-top: ${top}px` : ``
+        safeAreaTop: isDevtools || isAndroid ? `height: calc(var(--height) + ${top}px + 30px); padding-top: ${top}px` : ``
       })
     },
   },

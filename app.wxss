@@ -1,4 +1,9 @@
-/**app.wxss**/
+@font-face {
+  font-family: 'Pacifico';
+  src: url('/fonts/Pacifico-Regular.ttf');
+}
+
+
 body{
   background: #F8F4E8;
 }
@@ -12,11 +17,16 @@ body{
   box-sizing: border-box;
 } 
 
+view{
+  box-sizing: border-box;
+}
+
 .page{
   height: 100vh;
   background: #F8F4E8;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 
 .text-sm{
@@ -53,6 +63,10 @@ font-size: 1.875rem;
 
 .flex{
   display: flex;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .flex-1{
@@ -93,7 +107,7 @@ font-size: 1.875rem;
 }
 
 .gap-6{
-  gap: 1.5rem;
+  gap: 48rpx;
 }
 
 .logo{
@@ -130,7 +144,11 @@ font-size: 1.875rem;
 }
 
 .rounded-md{
-  border-radius: 10px;
+  border-radius: .75rem;
+}
+
+.text-pacifico {
+  font-family: 'Pacifico', cursive;
 }
 
 .font-bold{
@@ -139,6 +157,14 @@ font-size: 1.875rem;
 
 .bg-white{
   background-color: white;
+}
+
+.bg-gray-200{
+  background-color: rgb(212, 212, 212);
+}
+
+.bg-red{
+  background-color: #ef4444;
 }
 
 .bg-blue{
@@ -178,7 +204,19 @@ font-size: 1.875rem;
 }
 
 .pt-6{
-  padding-top: 1.5  rem;
+  padding-top: 48rpx;
+}
+
+.py-6{
+  padding: 48rpx 0rem;
+}
+
+.py-8{
+  padding: 2rem 0rem;
+}
+
+.px-6{
+  padding: 0rem 48rpx;
 }
 
 .m-none{
@@ -186,7 +224,7 @@ font-size: 1.875rem;
 }
 
 .p-6{
-  padding: 1.5rem;
+  padding: 48rpx;
 }
 
 .overflow-hidden{
@@ -216,4 +254,17 @@ font-size: 1.875rem;
   box-shadow:
     0 10rpx 15rpx -3rpx rgba(0, 0, 0, 0.1),
     0 4rpx 6rpx -4rpx rgba(0, 0, 0, 0.1);
+}
+
+.grid{
+  display: grid;
+  gap: 32rpx;
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-rows-2{
+  grid-template-rows: repeat(2, auto);
 }

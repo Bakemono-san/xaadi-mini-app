@@ -10,6 +10,10 @@ Component({
       type: String,
       value: ''
     },
+    fontSize:{
+      type: String,
+      value: ''
+    },
     background: {
       type: String,
       value: ''

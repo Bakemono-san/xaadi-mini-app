@@ -1,0 +1,50 @@
+<view class="page">
+  <nav-bar title="Scores" showBack />
+
+  <view class="p-6 flex-col flex gap-4">
+    
+
+    <view class="flex flex-wrap gap-4">
+      <view class="stat-item">
+      <image src="" class="icon"/>
+        <text>{{displayedStats.parties_jouees}}</text>
+        <text>Parties Jouées</text>
+      </view>
+      <view class="stat-item">
+        <image src="" class="icon"/>
+        <text>{{displayedStats.victoire}}</text>
+        <text>Victoires J1</text>
+      </view>
+      <view class="stat-item">
+        <image src="" class="icon"/>
+        <text>{{displayedStats.defaite}}</text>
+        <text>Victoires J2/IA</text>
+      </view>
+      <view class="stat-item">
+      <image src="" class="icon"/>
+        <text>{{displayedStats.nuls}}</text>
+        <text>Matchs Nuls</text>
+      </view>
+    </view>
+
+    <view class="bg-white  flex items-center justify-between p-4 gap-4 rounded-md">
+      <view data-tab="tous" bindtap="onTabClick" class="tab {{currentTab === 'tous' ? 'bg-turquoise' : 'bg-gray-200'}}">Tous</view>
+      <view data-tab="solo" bindtap="onTabClick" class="tab {{currentTab === 'solo' ? 'bg-turquoise' : 'bg-gray-200'}}">Solo</view>
+      <view data-tab="deux" bindtap="onTabClick" class="tab {{currentTab === 'deux' ? 'bg-turquoise' : 'bg-gray-200'}}">2 Joueurs</view>
+    </view>
+
+    <view wx:if="{{displayedStats.parties_jouees === 0}}">
+      <text>Aucun score enregistré</text>
+      <button>Commencer à Jouer</button>
+    </view>
+
+    <view wx:else class="bg-white flex flex-col gap-4  items-center py-8 rounded-md">
+      <image src="" class="icon"/>
+      <text>Meilleur score</text>
+      <menu-btn title="Commencer a jouer" bind:tap="start" background="bg-turquoise" fontSize="text-mini" />
+    </view>
+    
+    
+
+  </view>
+</view>
